@@ -297,6 +297,50 @@ header {
     font-size: 20px;
     color: var(--text-light);
 }
+/* Our Projects Style Part Start  */
+#project-part{
+    padding-top: 75px;
+    padding-bottom: 75px;
+   
+}
+.projects-header{
+    text-align: center;
+}
+.projects-title{
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    padding-top: 70px;
+}
+.project{
+    border-radius: 8px;
+    padding: 20px  15px 30px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.project img{
+    height: 400px;
+    width: 295px;
+}
+.house-details{
+    display: flex;
+    justify-content: space-between;
+}
+.project-name{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.fa-star.filled{
+  color: #FF900E;
+}
+.fa-star.empty{
+    color: gray;
+}
 /*------------------------------
     Sponsors section styles
 ------------------------------*/
