@@ -1,0 +1,340 @@
+/*----Fonts-----*/
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+ /*------------------ 
+    Common Styles
+------------------*/
+:root {
+    --color-primary: #FF900E;
+    --background-color: #FF900E19;
+    /* Last 2 digits for 10% opacity */
+    --text-bold: #131313;
+    --text-light: #727272;
+    --nav-link-color: #424242;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/*------------------- 
+    Navbar Styles
+-------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.navbar__title__container {
+    align-items: center;
+}
+
+.navbar__title,
+.section__title {
+    color: var(--text-bold);
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.navbar__links_container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links_container ul {
+    display: flex;
+    gap: 70px;
+}
+
+.navbar__links_container ul li {
+    list-style: none;
+    ;
+}
+
+.navbar__links_container ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+
+/*------------------- 
+    Header Styles
+-------------------*/
+header {
+    background-color: var(--background-color);
+    padding: 50px 0px 45px;
+}
+
+.header__description {
+    text-align: center;
+}
+
+.header__title {
+    color: var(--text-bold);
+    font-weight: 700;
+    font-size: 64px;
+    margin: 100px 0 50px;
+}
+
+.description {
+    color: var(--text-light);
+}
+
+.btn--primary {
+    margin: 40px 0px;
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+.banner__image {
+    width: 100%;
+}
+/*-------------------------------
+    Quick List section styles
+-------------------------------*/
+.quick__list {
+    margin-top: 85px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.quick__list__image__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.quick__list__image__container img {
+    width: 342px;
+    height: 342px;
+}
+
+.quick__list__description__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.quick__list__title {
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.text--bold {
+    color: var(--text-bold);
+    font-weight: 700;
+}
+
+.text--primary {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.quick__list__description__container button {
+    margin-top: 5px;
+    align-self: flex-start;
+    /* to prevent button from taking full width */
+}
+
+
+/*----------------------------- 
+    Features seciton styles
+-----------------------------*/
+.features__container {
+    display: flex;
+    gap: 50px;
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+
+.features__description__container {
+    width: 40%;
+}
+
+.features__title {
+    padding-left: 20px;
+    border-left: 5px solid var(--color-primary);
+    margin-bottom: 25px;
+}
+
+.features__description {
+    margin-bottom: 30px;
+}
+
+.feature {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-bold);
+    margin-bottom: 10px;
+}
+
+.features__image__container {
+    width: 60%;
+    position: relative;
+}
+
+.features__image__container img {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    ;
+}
+
+.experience-container {
+    background-color: var(--color-primary);
+    padding: 45px 40px;
+    font-size: 25px;
+    width: 342px;
+    height: 200px;
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.text__large {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+
+/*-------------------------- 
+    Facts section styles
+--------------------------*/
+.facts {
+    margin-bottom: 180px;
+}
+
+.facts__description {
+    width: 540px;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+
+.fact__container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.fact {
+    width: 240px;
+    height: 240px;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease 0.2s;
+}
+
+.fact:hover {
+    transform: scale(0.9);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 235, 212, 0.9));
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3)
+}
+
+.fact:hover img {
+    transform: rotateY(360deg);
+}
+
+.fact:hover .fact__counter {
+    color: var(--color-primary);
+    font-weight: 900;
+}
+
+.fact img {
+    height: 45px;
+    width: 45px;
+    transition: transform 0.5s ease-in;
+}
+
+.fact__counter {
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--nav-link-color);
+}
+
+.fact__description {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-light);
+}
+/*------------------------------
+    Sponsors section styles
+------------------------------*/
+.sponsors {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.sponsors__description {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.sponsors__logo__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sponsors__logo__container img {
+    height: 50px;
+    width: 167px;
+    filter: grayscale(100%);
+}
+
+
+/*--------------------------- 
+    Footer section styles
+---------------------------*/
+.footer {
+    background-color: var(--background-color);
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.footer__text {
+    font-size: 20px;
+    color: var(--nav-link-color);
+}
